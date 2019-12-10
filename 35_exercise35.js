@@ -21,7 +21,7 @@ function armstrongChk(userNum){
         
         for (i=0 ; i<userNum.length ; i++) {
 
-                armstNum += Math.pow(parseInt(userNum.charAt(i)),3);
+                armstNum += Math.pow(parseInt(userNum.charAt(i)),userNum.length);
             
         }
         
@@ -152,12 +152,16 @@ and Perfect positive numbers until max*/
 
         for ( g=0 ; g<=max; g++){
 
-            if( perfectChk(g)===true || armstrongChk(g) ===true) {
+            if( perfectChk(g)===true) {
 
-                disp += `  ${g} `;
+                disp += `${g} is a perfect number` + "\n";
+            }else if( armstrongChk(g) ===true) {
+                disp += `${g} is a armstrong number`+ "\n";
             }else{
                 continue;
             }
-        }
+               
+            }
+        
 
         alert(`${disp}`);
