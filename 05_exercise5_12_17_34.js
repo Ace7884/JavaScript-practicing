@@ -7,12 +7,11 @@ wrong and don’t let him withdraw
 o Add feature: don’t let the user withdraw more than he has
 in the account
 
-
 */
 
 
 //initiate balance
-/*
+
 let currentBalance=1000;
 let password = 'secret';
 
@@ -37,7 +36,7 @@ if (checkPassword === authenticateUser) {
 }else{
     alert('password incorrect try again');
 }
-*/
+
 /*Rolling Project – BankSystem:
 o Improve the secret code coming from user,
  instead of hardcoded secret - symmetric codes
